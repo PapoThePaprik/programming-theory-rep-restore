@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class zombieBIg : Zombie
+public class zombieBIg : Zombie // INHERITANCE
 {
 
 	 
@@ -11,7 +11,7 @@ public class zombieBIg : Zombie
 
 
 	//dis boi is slow af cuz hes biggus 
-	public override void Moving()
+	public override void Moving() // POLYMORPHISM
 	{
 		base.Moving();
 	}
