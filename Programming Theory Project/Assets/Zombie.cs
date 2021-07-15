@@ -10,8 +10,8 @@ public class Zombie : MonoBehaviour
 	
 	Vector3 lookDirection;
 	
-	public float movementSpeed { get;  set; }
-	
+	public float movementSpeed { get;  set; } // ENCAPSULATION
+
 
 
 
@@ -21,7 +21,7 @@ public class Zombie : MonoBehaviour
 		Moving();
 	}
 
-	public virtual void Moving()
+	public virtual void Moving() // ABSTRACTION
 	{
 		lookDirection = player.transform.position - transform.position;
 		zombieRb.AddForce((lookDirection).normalized * movementSpeed * Time.deltaTime);

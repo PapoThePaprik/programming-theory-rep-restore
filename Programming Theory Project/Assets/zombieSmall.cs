@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class zombieSmall : Zombie
+public class zombieSmall : Zombie // INHERITANCE
 {
 	[SerializeField]
 	private int m_movementSpeed;
 
 
 	//this boi is fast af cuz hes smull
-	public override void Moving()
+	public override void Moving() // POLYMORPHISM
 	{
-		base.Moving();
+		base.Moving(); 
 	}
 
 	private void Start()
